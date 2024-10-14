@@ -1,36 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 13:35:15 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/14 10:56:32 by mahkilic         ###   ########.fr       */
+/*   Created: 2024/10/14 15:07:58 by mahkilic          #+#    #+#             */
+/*   Updated: 2024/10/14 15:09:55 by mahkilic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+int	ft_tolower(int c)
 {
-	char	*clean;
-
-	clean = s;
-	while (n != 0)
+	if (c >= 65 && c <= 90)
 	{
-		*clean++ = 0;
-		n--;
+		return (c + 32);
 	}
+	return (c);
 }
-
-// int main()
-// {
-//     char buffer[16] = "Helloooo";
-
-//     ft_bzero(buffer, 5);
-
-//     printf("%d\n", buffer[0]);
-
-//     return 0;
-// }

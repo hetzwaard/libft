@@ -1,36 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 13:35:15 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/14 10:56:32 by mahkilic         ###   ########.fr       */
+/*   Created: 2024/10/14 12:52:30 by mahkilic          #+#    #+#             */
+/*   Updated: 2024/10/14 13:03:02 by mahkilic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
-{
-	char	*clean;
+unsigned int	ft_strlcpy(char *dst, char *src, unsigned int size)
 
-	clean = s;
-	while (n != 0)
+{
+	unsigned int	i;
+	unsigned int	x;
+
+	x = ft_strlen(src);
+	i = 0;
+	if (size != 0)
 	{
-		*clean++ = 0;
-		n--;
+		while (src [i] != '\0' && i < size - 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
 	}
+	return (x);
 }
 
-// int main()
+// int	main()
 // {
-//     char buffer[16] = "Helloooo";
-
-//     ft_bzero(buffer, 5);
-
-//     printf("%d\n", buffer[0]);
-
-//     return 0;
+// 	char src[] = "Dunya!";
+// 	char dst[] = "Merhaba";
+// 	printf("%d | %s", ft_strlcpy(dst, src, 10), dst);
 // }

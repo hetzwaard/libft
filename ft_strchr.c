@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 13:35:15 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/14 10:56:32 by mahkilic         ###   ########.fr       */
+/*   Created: 2024/10/14 15:11:55 by mahkilic          #+#    #+#             */
+/*   Updated: 2024/10/14 19:07:02 by mahkilic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strchr(const char *s, int c)
 {
-	char	*clean;
+	unsigned int	i;
 
-	clean = s;
-	while (n != 0)
+	i = 0;
+	while (s[i])
 	{
-		*clean++ = 0;
-		n--;
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i++;
 	}
+	if ((char)c == s[i])
+		return ((char *)&s[i]);
+	return (NULL);
 }
-
-// int main()
-// {
-//     char buffer[16] = "Helloooo";
-
-//     ft_bzero(buffer, 5);
-
-//     printf("%d\n", buffer[0]);
-
-//     return 0;
-// }

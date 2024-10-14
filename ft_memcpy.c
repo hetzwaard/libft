@@ -6,7 +6,7 @@
 /*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:36:20 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/11 18:25:39 by mahkilic         ###   ########.fr       */
+/*   Updated: 2024/10/14 11:26:28 by mahkilic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,30 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	unsigned char	*d;
+	unsigned char	*s;
 
-	i = 0;
-	while (i < n)
-	{
-		*((char *)(dest + i)) = *((char *)(src + i));
-		i++;
-	}
+	if (!dest && !src && n > 0)
+		return (NULL);
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	while (n--)
+		*d++ = *s++;
 	return (dest);
 }
 
-// int main()
+// int main(void)
 // {
-//     char str[] = "Mahmut Kilic";
-//     ft_memcpy(str, 'a', 6);
-//     printf("%s", str);
+//     char src[] = "Hello";
+//     char dest[6];
+
+//     ft_memcpy(dest, src, 5);
+//     printf("%s\n", dest);
+
+//     if (ft_memcpy(NULL, NULL, 3) == NULL)
+//         printf("+respect\n");
+//     else
+//         printf("-respect\n");
+
+//     return 0;
 // }
