@@ -6,7 +6,7 @@
 /*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:35:15 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/14 10:56:32 by mahkilic         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:47:19 by mahkilic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,12 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-// int main()
-// {
-//     char buffer[16] = "Helloooo";
+// int main() {
+//     char str[14] = "123456789";
 
-//     ft_bzero(buffer, 5);
-
-//     printf("%d\n", buffer[0]);
-
+//     printf("Before: %s\n", str);
+//     ft_bzero(str, 4);
+//     printf("After: %s\n", str + 4);
+	
 //     return 0;
 // }
