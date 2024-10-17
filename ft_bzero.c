@@ -26,10 +26,8 @@ void	ft_bzero(void *s, size_t n)
 
 // int main() {
 //     char str[14] = "123456789";
-
 //     printf("Before: %s\n", str);
 //     ft_bzero(str, 4);
 //     printf("After: %s\n", str + 4);
-	
 //     return 0;
 // }

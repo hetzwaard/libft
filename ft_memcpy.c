@@ -10,21 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
-
-void	*ft_memcpy(void *dest, void *src, int n)
-{
-	if (dest == 0) 
-		return (0); // error check
-	
-	char *char_dest = (char *) dest; // converting void to char
-	char *char_src = (char *) src; // ''
-
-	for(int i = 0; i < n; i++) // a loop copies one by one
-		char_dest[i] = char_src[i]; // copying bytes
-
-	return dest;
-}
+#include "libft.h"
 
 // size_t	ft_strlen(const char *s)
 
@@ -40,19 +26,19 @@ void	*ft_memcpy(void *dest, void *src, int n)
 // 	return (i);
 // }
 
-// void	*ft_memcpy(void *dest, const void *src, size_t n)
-// {
-// 	unsigned char	*d;
-// 	unsigned char	*s;
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	unsigned char	*d;
+	unsigned char	*s;
 
-// 	if (!dest && !src && n > 0)
-// 		return (NULL);
-// 	d = (unsigned char *)dest;
-// 	s = (unsigned char *)src;
-// 	while (n--)
-// 		*d++ = *s++;
-// 	return (dest);
-// }
+	if (!dest && !src && n > 0)
+		return (NULL);
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	while (n--)
+		*d++ = *s++;
+	return (dest);
+}
 
 // int main(void)
 // {
