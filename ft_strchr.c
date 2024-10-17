@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
 	while (s[i])
@@ -28,14 +28,15 @@ char	*ft_strchr(const char *s, int c)
 	return (0);
 }
 
-// int main ()  
-// {  
-//     const char str[] = "Program using strchr";  
-//     const char ch = 'm';
-//     char *ptr;   
-//     printf (" Original string is: %s \n", str);  
-//     ptr = ft_strchr( str, ch);  
-//     printf (" The first occurrence of the '%c' in '%s' string
-//  is: '%s' ", ch, str, ptr);  
-//     return 0;  
-// }  
+// int main(void)
+// {
+//     const char *str = "I Love Codam!";
+//     char aranan_karakter = 'C';
+//     char *sonuc;
+//     sonuc = ft_strchr(str, aranan_karakter);
+//     if (sonuc != NULL)
+//         printf("'%c' %s\n", aranan_karakter, sonuc);
+//     else
+//         printf("'%c' \n", aranan_karakter);
+//     return 0;
+// }
