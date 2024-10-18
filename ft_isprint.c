@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 11:28:37 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/11 18:37:27 by mahkilic         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_isprint.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2024/10/11 11:28:37 by mahkilic      #+#    #+#                 */
+/*   Updated: 2024/10/11 18:37:27 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <unistd.h>
+// #include <stdio.h>
 
 int	ft_isprint(int c)
 {

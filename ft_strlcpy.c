@@ -1,30 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 12:52:30 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/14 13:03:02 by mahkilic         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_strlcpy.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2024/10/14 12:52:30 by mahkilic      #+#    #+#                 */
+/*   Updated: 2024/10/14 13:03:02 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// size_t	ft_strlen(const char *s)
-
-// {
-// 	size_t	i;
-
-// 	i = 0;
-// 	while (*s != '\0')
-// 	{
-// 		i++;
-// 		s++;
-// 	}
-// 	return (i);
-// }
 
 unsigned int	ft_strlcpy(char *dst, char *src, unsigned int size)
 

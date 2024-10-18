@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_isalnum.c                                       :+:    :+:            */
+/*   ft_strncmp.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/10/11 11:25:14 by mahkilic      #+#    #+#                 */
-/*   Updated: 2024/10/11 18:41:35 by mahkilic      ########   odam.nl         */
+/*   Created: 2024/10/18 14:52:20 by mahkilic      #+#    #+#                 */
+/*   Updated: 2024/10/18 15:29:09 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <unistd.h>
-// #include <stdio.h>
+#include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else if (c >= 65 && c <= 90)
-		return (1);
-	else if (c >= 97 && c <= 122)
-		return (1);
-	else
+	while (*s1 == *s2 && *s1 && n > 1)
+	{
+		s1++;
+		s2++;
+		n--;
+	}
+	if (n == 0)
 		return (0);
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
 
-// int main()
+// int	main(void)
 // {
-//     printf("%d",ft_isalnum('9'));
+// 	char	*s1;
+// 	char	*s2;
+
+// 	s1 = "Frankasteinshh";
+// 	s2 = "Frenkasteinshh";
+// 	printf("%d\n", ft_strncmp(s1, s2, 3));
 // }
