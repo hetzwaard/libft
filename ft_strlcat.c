@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 12:53:25 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/15 14:53:29 by mahkilic         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_strlcat.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2024/10/14 12:53:25 by mahkilic      #+#    #+#                 */
+/*   Updated: 2024/10/15 14:53:29 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *dst, char *src, unsigned int size)
+size_t	ft_strlcat(char *dst, char *src, unsigned int size)
 {
 	unsigned int	i;
 	unsigned int	j;

@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mahkilic <mahkilic@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 11:23:33 by mahkilic          #+#    #+#             */
-/*   Updated: 2024/10/11 18:37:21 by mahkilic         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_isdigit.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2024/10/11 11:23:33 by mahkilic      #+#    #+#                 */
+/*   Updated: 2024/10/18 15:15:17 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <unistd.h>
+// #include <stdio.h>
 
 int	ft_isdigit(int c)
 {

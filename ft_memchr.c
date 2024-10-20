@@ -1,35 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_memset.c                                        :+:    :+:            */
+/*   ft_memchr.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/10/11 11:35:31 by mahkilic      #+#    #+#                 */
-/*   Updated: 2024/10/16 12:47:29 by mahkilic      ########   odam.nl         */
+/*   Created: 2024/10/18 16:56:42 by mahkilic      #+#    #+#                 */
+/*   Updated: 2024/10/18 18:08:40 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
-	char	*memory_block;
+	char	*str;
 
 	i = 0;
-	memory_block = (char *)s;
+	str = (char *)s;
 	while (i < n)
 	{
-		memory_block[i] = c;
+		if (str[i] == (char)c)
+		{
+			return (str + i);
+		}
 		i++;
 	}
-	return (s);
+	return (NULL);
 }
 
-// int main()
-// {
-//     char memory_block[] = "Mahmut";
-//     ft_memset(memory_block, 'a', 4);
-//     printf("%s", memory_block);
-// }
+//int	main(void)
+//{
+//    char *str = ft_memchr("sf", 'n', 5);
+//    char *str1 = memchr("bonjourno", 'n', 2);
+//	//char *pos = ft_memchr(data, 'A', 10);
+//	//char *posm = memchr(data, 'A', 10);
+
+//	printf("%s\n", str);
+//	printf("%s\n", str1);
+//	//printf("%s\n", posm);
+//	return (0);
+//}
