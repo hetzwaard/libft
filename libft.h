@@ -37,6 +37,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);
 char	*ft_strrchr(const char *s, int c);
