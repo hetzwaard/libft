@@ -56,6 +56,8 @@ size_t	ft_strlcat(char *dst, const char *src, unsigned int size);
 size_t	ft_strlcpy(char *dst, const char *src, unsigned int size);
 size_t	ft_strlen(const char *s);
 
+char	**ft_split(char const *s, char c);
+
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *str, int fd);
