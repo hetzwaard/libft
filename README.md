@@ -1,6 +1,6 @@
 # Libft - Custom C Library
 
-Libft is a project where I implemented my own version of essential C standard library functions, as part of the Codam curriculum. This project helped me understand memory management, string manipulation, and other foundational C concepts. The library includes functions to handle strings, memory, numbers, and more, which can be linked and used in other C projects.
+Libft is a project where I implemented my own version of essential C standard library functions, as part of the Codam (42 Amsterdam) Core curriculum. This project helped me understand memory management, string manipulation, and other foundational C concepts. The library includes functions to handle strings, memory, numbers, and more, which can be linked and used in other C projects.
 
 ## Installation
 To use this library, first clone the repository and compile the library:
