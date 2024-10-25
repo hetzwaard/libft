@@ -38,11 +38,3 @@ size_t	ft_strlcat(char *dst, const char *src, unsigned int size)
 	dst[j] = '\0';
 	return (dlen + slen);
 }
-
-// int main (void)
-// {
-// 	char src[] = "wanna get big gotta eat big";
-//     	char dst [] = "3199 42";
-//     printf("%i \n", ft_strlcat(dst, src, 27));
-//     printf("%s \n", dst);
-// }

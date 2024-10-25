@@ -35,16 +35,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-// int main(void)
-// {
-//     char *str = "I LovCe CodCam!";
-//     char wanted_man = 'C';
-//     char *result;
-//     result = ft_strrchr(str, wanted_man);
-//     if (result != NULL)
-//         printf("'%c' %s\n", wanted_man, result);
-//     else
-//         printf("'%c' \n", wanted_man);
-//     return 0;
-// }

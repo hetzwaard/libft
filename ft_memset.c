@@ -26,10 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-// int main()
-// {
-//     char memory_block[] = "Mahmut";
-//     ft_memset(memory_block, 'a', 4);
-//     printf("%s", memory_block);
-// }

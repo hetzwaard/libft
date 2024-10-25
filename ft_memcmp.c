@@ -31,12 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (*x - *y);
 }
-
-//int	main(void)
-//{
-//	char s1[] = "domates";
-//	char s2[] = "domates";
-
-//	printf("%d\n", ft_memcmp(s1, s2, 6));
-//	printf("%d\n", memcmp(s1, s2, 6));
-//}

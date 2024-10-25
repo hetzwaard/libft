@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	intlen(long nbr)
+static int	intlen(long nbr)
 {
 	int	len;
 
@@ -27,7 +27,7 @@ int	intlen(long nbr)
 	return (len);
 }
 
-char	*allocate_memory(int len)
+static char	*allocate_memory(int len)
 {
 	char	*tmp;
 

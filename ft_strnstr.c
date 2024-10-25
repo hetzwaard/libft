@@ -34,12 +34,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
-//int main ()
-//{  
-// 	const char *strb[] = "Program using strnstr";
-//	const char strl[] = "using strnstr";
-//    size_t lenx = 9;
-//    printf ("%d\n",	ft_strnstr(strb, strl, lenx));
-//    return 0;
-//}

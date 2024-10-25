@@ -31,10 +31,3 @@ size_t	ft_strlcpy(char *dst, const char *src, unsigned int size)
 	}
 	return (x);
 }
-
-// int	main()
-// {
-// 	char src[] = "Dunya!";
-// 	char dst[] = "Merhaba";
-// 	printf("%d | %s", ft_strlcpy(dst, src, 10), dst);
-// }

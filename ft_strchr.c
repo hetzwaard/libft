@@ -27,15 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (0);
 }
-
-// int main ()  
-// {  
-//     const char str[] = "Program using strchr";  
-//     const char ch = 'm';
-//     char *ptr;   
-//     printf (" Original string is: %s \n", str);  
-//     ptr = ft_strchr( str, ch);  
-//     printf (" The first occurrence of the '%c' in '%s' string
-//  is: '%s' ", ch, str, ptr);  
-//     return 0;  
-// }  

@@ -24,13 +24,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
-
-// int	main(void)
-// {
-// 	char	*s1;
-// 	char	*s2;
-
-// 	s1 = "Frankasteinshh";
-// 	s2 = "Frenkasteinshh";
-// 	printf("%d\n", ft_strncmp(s1, s2, 3));
-// }

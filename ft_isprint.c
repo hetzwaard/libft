@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <unistd.h>
-// #include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -20,8 +19,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-// int main()
-// {
-//     printf("%d",ft_isprint('9'));
-// }

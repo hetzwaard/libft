@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_safe_malloc(char **token_v, int position, size_t buffer)
+static int	ft_safe_malloc(char **token_v, int position, size_t buffer)
 {
 	int	i;
 
@@ -30,27 +30,7 @@ int	ft_safe_malloc(char **token_v, int position, size_t buffer)
 	return (0);
 }
 
-size_t	ft_strlcpy(char *dst, const char *src, unsigned int size)
-
-{
-	unsigned int	i;
-	unsigned int	x;
-
-	x = strlen(src);
-	i = 0;
-	if (size != 0)
-	{
-		while (src [i] != '\0' && i < size - 1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	return (x);
-}
-
-int	ft_fill(char **token_v, char const *s, char delimeter)
+static int	ft_fill(char **token_v, char const *s, char delimeter)
 {
 	size_t		len;
 	int			i;
@@ -79,7 +59,7 @@ int	ft_fill(char **token_v, char const *s, char delimeter)
 	return (0);
 }
 
-size_t	ft_count_tokens(char const *s, char delimeter)
+static size_t	ft_count_tokens(char const *s, char delimeter)
 {
 	size_t	tokens;
 
@@ -116,16 +96,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (token_v);
 }
-
-// int main(void)
-// {
-// 	char *str = "hello!zzzzzzzz";
-// 	char **token_v = ft_split(str, 'z');
-// 	int i = 0;
-// 	while (token_v[i])
-// 	{
-// 		printf("%s\n", token_v[i]);
-// 		i++;
-// 	}
-// 	return (0);
-// }
