@@ -13,13 +13,13 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include <unistd.h>
 
 int		ft_atoi(const char *nptr);
-long		ft_atol(const char *str);
+long	ft_atol(const char *str);
 
 void	ft_bzero(void *s, size_t n);
 
@@ -51,7 +51,7 @@ char	*ft_itoa(int n);
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 size_t	ft_strlcat(char *dst, const char *src, unsigned int size);
