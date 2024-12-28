@@ -6,7 +6,7 @@
 /*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/07 21:08:13 by mahkilic      #+#    #+#                 */
-/*   Updated: 2024/10/18 17:12:19 by mahkilic      ########   odam.nl         */
+/*   Updated: 2024/12/28 16:16:38 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <string.h>
 
 int		ft_atoi(const char *nptr);
+long		ft_atol(const char *str);
 
 void	ft_bzero(void *s, size_t n);
 
@@ -28,6 +29,7 @@ int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
+int		ft_isspace(int c);
 int		ft_isprint(int c);
 
 void	*ft_memset(void *s, int c, size_t n);
