@@ -31,7 +31,7 @@ SRCS			=	$(SRC_DIR)/ft_isalnum.c  $(SRC_DIR)/ft_isprint.c  $(SRC_DIR)/ft_isascii
 OBJS = $(SRCS:.c=.o)
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -I$(INC_DIR)
+CFLAGS = -Wall -Werror -Wextra -fPIE -I$(INC_DIR)
 
 all: $(NAME)
 
