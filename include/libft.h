@@ -2,11 +2,11 @@
 /*                                                                            */
 /*                                                        ::::::::            */
 /*   libft.h                                            :+:    :+:            */
-/*                                                    
+/*
 	+:+                    */
-/*   By: mahkilic <mahkilic@student.42.fr>           
+/*   By: mahkilic <mahkilic@student.42.fr>
 	+#+                     */
-/*                                                  
+/*
 	+#+                      */
 /*   Created: 2024/10/07 21:08:13 by mahkilic      #+#    #+#                 */
 /*   Updated: 2024/12/28 16:16:38 by mahkilic      ########   odam.nl         */
@@ -23,6 +23,7 @@
 # include <unistd.h>
 
 int	ft_atoi(const char *nptr);
+
 long	ft_atol(const char *str);
 
 void	ft_bzero(void *s, size_t n);
