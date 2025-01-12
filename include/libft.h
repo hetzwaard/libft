@@ -27,6 +27,7 @@ int		ft_atoi(const char *nptr);
 long	ft_atol(const char *str);
 
 void	ft_bzero(void *s, size_t n);
+void	ft_swap_long(long *a, long *b);
 
 void	*ft_calloc(size_t nmemb, size_t size);
 
