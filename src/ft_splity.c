@@ -40,6 +40,7 @@ static char	*get_next_word(char *s, char c)
 {
 	static int	cursor = 0;
 	char		*next_word;
+	char		*temp;
 	int			len;
 	int			i;
 
@@ -55,34 +56,33 @@ static char	*get_next_word(char *s, char c)
 	while ((s[cursor] != c) && s[cursor])
 		next_word[i++] = s[cursor++];
 	next_word[i] = '\0';
-	return (next_word);
+	temp = next_word;
+	free(next_word);
+	return (temp);
 }
 
 char	**ft_splity(char *s, char c)
 {
-	int		words_count;
-	char	**result_array;
+	int		wc;
+	char	**res;
+	char	**temp;
 	int		i;
 
-	i = 0;
-	words_count = count_words(s, c);
-	if (!words_count)
+	wc = count_words(s, c);
+	if (wc < 1)
 		exit(1);
-	result_array = malloc(sizeof(char *) * (size_t)(words_count + 2));
-	if (!result_array)
+	res = malloc(sizeof(char *) * (wc + 2));
+	if (!res)
 		return (NULL);
-	while (words_count-- >= 0)
-	{
-		if (i == 0)
-		{
-			result_array[i] = malloc(sizeof(char));
-			if (!result_array[i])
-				return (NULL);
-			result_array[i++][0] = '\0';
-			continue ;
-		}
-		result_array[i++] = get_next_word(s, c);
-	}
-	result_array[i] = NULL;
-	return (result_array);
+	res[0] = malloc(sizeof(char));
+	if (!res[0])
+		return (NULL);
+	res[0][0] = '\0';
+	i = 1;
+	while (i <= wc)
+		res[i++] = get_next_word(s, c);
+	res[i] = NULL;
+	temp = res;
+	free(res);
+	return (temp);
 }
