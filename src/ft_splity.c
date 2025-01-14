@@ -6,7 +6,7 @@
 /*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/01/02 09:16:21 by mahkilic      #+#    #+#                 */
-/*   Updated: 2025/01/02 09:19:54 by mahkilic      ########   odam.nl         */
+/*   Updated: 2025/01/14 22:00:19 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ static char	*get_next_word(char *s, char c)
 {
 	static int	cursor = 0;
 	char		*next_word;
-	char		*temp;
 	int			len;
 	int			i;
 
@@ -56,16 +55,13 @@ static char	*get_next_word(char *s, char c)
 	while ((s[cursor] != c) && s[cursor])
 		next_word[i++] = s[cursor++];
 	next_word[i] = '\0';
-	temp = next_word;
-	free(next_word);
-	return (temp);
+	return (next_word);
 }
 
 char	**ft_splity(char *s, char c)
 {
 	int		wc;
 	char	**res;
-	char	**temp;
 	int		i;
 
 	wc = count_words(s, c);
@@ -82,7 +78,5 @@ char	**ft_splity(char *s, char c)
 	while (i <= wc)
 		res[i++] = get_next_word(s, c);
 	res[i] = NULL;
-	temp = res;
-	free(res);
-	return (temp);
+	return (res);
 }
