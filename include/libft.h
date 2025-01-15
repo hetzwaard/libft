@@ -31,6 +31,8 @@ void	ft_swap_long(long *a, long *b);
 
 void	*ft_calloc(size_t nmemb, size_t size);
 
+void	ft_free_arr(char **res);
+
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);

@@ -26,7 +26,7 @@ SRCS			=	$(SRC_DIR)/ft_isalnum.c  $(SRC_DIR)/ft_isprint.c  $(SRC_DIR)/ft_isascii
 					$(SRC_DIR)/ft_substr.c  $(SRC_DIR)/ft_strjoin.c  $(SRC_DIR)/ft_strmapi.c  \
 					$(SRC_DIR)/ft_striteri.c  $(SRC_DIR)/ft_strtrim.c  $(SRC_DIR)/ft_itoa.c  \
 					$(SRC_DIR)/ft_split.c  $(SRC_DIR)/ft_atol.c  $(SRC_DIR)/ft_isspace.c  \
-					$(SRC_DIR)/ft_ps_split.c $(SRC_DIR)/ft_swap_long.c 
+					$(SRC_DIR)/ft_ps_split.c $(SRC_DIR)/ft_swap_long.c $(SRC_DIR)/ft_free_arr.c
 
 OBJS = $(SRCS:.c=.o)
 
