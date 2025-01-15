@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_splity.c                                        :+:    :+:            */
+/*   ft_ps_split.c                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
@@ -58,7 +58,7 @@ static char	*get_next_word(char *s, char c)
 	return (next_word);
 }
 
-char	**ft_splity(char *s, char c)
+char	**ft_ps_split(char *s, char c)
 {
 	int		wc;
 	char	**res;
