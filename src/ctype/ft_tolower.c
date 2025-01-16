@@ -6,12 +6,11 @@
 /*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/14 15:07:58 by mahkilic      #+#    #+#                 */
-/*   Updated: 2025/01/16 20:40:59 by mahkilic      ########   odam.nl         */
+/*   Updated: 2025/01/16 21:33:35 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
-
 
 int	ft_tolower(int c)
 {

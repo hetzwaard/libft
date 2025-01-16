@@ -6,12 +6,11 @@
 /*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/11 11:28:37 by mahkilic      #+#    #+#                 */
-/*   Updated: 2025/01/16 20:40:53 by mahkilic      ########   odam.nl         */
+/*   Updated: 2025/01/16 21:33:28 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
-
 
 int	ft_isprint(int c)
 {
