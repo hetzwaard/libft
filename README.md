@@ -5,7 +5,7 @@ Libft is a project where I implemented my own version of essential C standard li
 ## Installation
 To use this library, first clone the repository and compile the library:
 ```bash
-git clone https://github.com/yourusername/libft.git
+git clone https://github.com/hetzwaard/libft.git
 cd libft
 make
 ```
