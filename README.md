@@ -2,7 +2,7 @@
 
 Libft is a custom C library that contains useful functions for C programming. It includes my own versions of important standard C functions, as well as some extra features like `ft_printf` and `get_next_line`.
 
-### What’s in Libft:
+## What’s in Libft:
 
 1. **Standard C Functions**  
    These are the basic functions you use every day in C programming. Some examples are:
