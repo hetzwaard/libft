@@ -21,7 +21,7 @@ Libft is a custom C library that contains useful functions for C programming. It
 5. **Custom Linked List Functions**  
    I also implemented custom functions to work with linked lists. A linked list is a way of storing data where each piece of data points to the next. This is useful when you need to store and manage dynamic data in your programs. You can create, modify, and traverse linked lists with these custom functions, which are designed specifically to meet the needs of my own projects.
 
-### Installation
+## Installation
 
 To use this library, first clone the repository and compile the library:
 ```bash
