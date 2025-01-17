@@ -1,6 +1,6 @@
 # Libft - Custom C Library
 
-Libft is a custom C library that contains useful functions for C programming. It includes my own versions of important standard C functions, as well as some extra features like `ft_printf`, `get_next_line`, and `linked list` functions.
+Libft is a custom C library that contains useful functions for C programming. It includes my own versions of important standard C functions, as well as some extra features like `ft_printf` and `get_next_line` functions.
 
 ### What’s in Libft:
 
@@ -18,8 +18,6 @@ Libft is a custom C library that contains useful functions for C programming. It
 3. **get_next_line**  
    `get_next_line` reads a file descriptor line by line. It was implemented with the bonus feature of handling file descriptors, allowing you to read data from any file or input stream one line at a time. This is useful when working with files or when you need to process data line by line. It makes reading large files easier and more efficient, especially when you don’t know how many lines the file has.
    
-5. **Custom Linked List Functions**  
-   I also implemented custom functions to work with linked lists. A linked list is a way of storing data where each piece of data points to the next. This is useful when you need to store and manage dynamic data in your programs. You can create, modify, and traverse linked lists with these custom functions, which are designed specifically to meet the needs of my own projects.
 
 ## Installation
 
