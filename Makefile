@@ -69,7 +69,7 @@ SRCS		=	$(SRC_DIR)/alg/ft_free_arr.c\
 OBJS = $(SRCS:.c=.o)
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -fPIE -I$(INC_DIR)
+CFLAGS = -Wall -Werror -Wextra -I$(INC_DIR)
 
 all: $(NAME)
 
