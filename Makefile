@@ -6,80 +6,108 @@
 #    By: mahkilic <mahkilic@student.42.fr>            +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/10/08 19:45:43 by mahkilic      #+#    #+#                  #
-#    Updated: 2025/01/16 21:23:44 by mahkilic      ########   odam.nl          #
+#    Updated: 2025/01/26 13:30:00 by mahkilic      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
-SRC_DIR = src
-INC_DIR = include
+# Compiler and flags
+CC		=	cc
+CFLAGS	=	-Wall -Werror -Wextra -I$(INCDIR)
 
-SRCS		=	$(SRC_DIR)/alg/ft_free_arr.c\
-				$(SRC_DIR)/alg/ft_swap_long.c\
-				$(SRC_DIR)/ctype/ft_isalnum.c\
-				$(SRC_DIR)/ctype/ft_isalpha.c\
-				$(SRC_DIR)/ctype/ft_isascii.c\
-				$(SRC_DIR)/ctype/ft_isdigit.c\
-				$(SRC_DIR)/ctype/ft_isprint.c\
-				$(SRC_DIR)/ctype/ft_isspace.c\
-				$(SRC_DIR)/ctype/ft_tolower.c\
-				$(SRC_DIR)/ctype/ft_toupper.c\
-				$(SRC_DIR)/gnl/get_next_line.c\
-				$(SRC_DIR)/mem/ft_memchr.c\
-				$(SRC_DIR)/mem/ft_memcmp.c\
-				$(SRC_DIR)/mem/ft_memcpy.c\
-				$(SRC_DIR)/mem/ft_memmove.c\
-				$(SRC_DIR)/mem/ft_memset.c\
-				$(SRC_DIR)/put/ft_putchar_fd.c\
-				$(SRC_DIR)/put/ft_putchar.c\
-				$(SRC_DIR)/put/ft_putendl_fd.c\
-				$(SRC_DIR)/put/ft_puthex.c\
-				$(SRC_DIR)/put/ft_putnbr_fd.c\
-				$(SRC_DIR)/put/ft_putnbr.c\
-				$(SRC_DIR)/put/ft_putptr.c\
-				$(SRC_DIR)/put/ft_putstr_fd.c\
-				$(SRC_DIR)/put/ft_putstr.c\
-				$(SRC_DIR)/put/ft_putuns.c\
-				$(SRC_DIR)/stdio/ft_printf.c\
-				$(SRC_DIR)/stdlib/ft_atoi.c\
-				$(SRC_DIR)/stdlib/ft_atol.c\
-				$(SRC_DIR)/stdlib/ft_bzero.c\
-				$(SRC_DIR)/stdlib/ft_calloc.c\
-				$(SRC_DIR)/stdlib/ft_itoa.c\
-				$(SRC_DIR)/stdlib/ft_split_ps.c\
-				$(SRC_DIR)/stdlib/ft_split.c\
-				$(SRC_DIR)/string/ft_strchr_gnl.c\
-				$(SRC_DIR)/string/ft_strchr.c\
-				$(SRC_DIR)/string/ft_strdup.c\
-				$(SRC_DIR)/string/ft_striteri.c\
-				$(SRC_DIR)/string/ft_strjoin_gnl.c\
-				$(SRC_DIR)/string/ft_strjoin.c\
-				$(SRC_DIR)/string/ft_strlcat.c\
-				$(SRC_DIR)/string/ft_strlcpy.c\
-				$(SRC_DIR)/string/ft_strlen_gnl.c\
-				$(SRC_DIR)/string/ft_strlen.c\
-				$(SRC_DIR)/string/ft_strmapi.c\
-				$(SRC_DIR)/string/ft_strncmp.c\
-				$(SRC_DIR)/string/ft_strnstr.c\
-				$(SRC_DIR)/string/ft_strrchr.c\
-				$(SRC_DIR)/string/ft_strtrim.c\
-				$(SRC_DIR)/string/ft_substr_gnl.c\
-				$(SRC_DIR)/string/ft_substr.c
+# Directories
+SRCDIR	=	src
+OBJDIR	=	objects
+INCDIR	=	include
 
-OBJS = $(SRCS:.c=.o)
+# Source files
+SRCS	=	$(SRCDIR)/alg/ft_free_arr.c \
+			$(SRCDIR)/alg/ft_swap_long.c \
+			$(SRCDIR)/ctype/ft_isalnum.c \
+			$(SRCDIR)/ctype/ft_isalpha.c \
+			$(SRCDIR)/ctype/ft_isascii.c \
+			$(SRCDIR)/ctype/ft_isdigit.c \
+			$(SRCDIR)/ctype/ft_isprint.c \
+			$(SRCDIR)/ctype/ft_isspace.c \
+			$(SRCDIR)/ctype/ft_tolower.c \
+			$(SRCDIR)/ctype/ft_toupper.c \
+			$(SRCDIR)/gnl/get_next_line.c \
+			$(SRCDIR)/mem/ft_memchr.c \
+			$(SRCDIR)/mem/ft_memcmp.c \
+			$(SRCDIR)/mem/ft_memcpy.c \
+			$(SRCDIR)/mem/ft_memmove.c \
+			$(SRCDIR)/mem/ft_memset.c \
+			$(SRCDIR)/put/ft_putchar_fd.c \
+			$(SRCDIR)/put/ft_putchar.c \
+			$(SRCDIR)/put/ft_putendl_fd.c \
+			$(SRCDIR)/put/ft_puthex.c \
+			$(SRCDIR)/put/ft_putnbr_fd.c \
+			$(SRCDIR)/put/ft_putnbr.c \
+			$(SRCDIR)/put/ft_putptr.c \
+			$(SRCDIR)/put/ft_putstr_fd.c \
+			$(SRCDIR)/put/ft_putstr.c \
+			$(SRCDIR)/put/ft_putuns.c \
+			$(SRCDIR)/stdio/ft_printf.c \
+			$(SRCDIR)/stdlib/ft_atoi.c \
+			$(SRCDIR)/stdlib/ft_atol.c \
+			$(SRCDIR)/stdlib/ft_bzero.c \
+			$(SRCDIR)/stdlib/ft_calloc.c \
+			$(SRCDIR)/stdlib/ft_itoa.c \
+			$(SRCDIR)/stdlib/ft_split_ps.c \
+			$(SRCDIR)/stdlib/ft_split.c \
+			$(SRCDIR)/string/ft_strchr_gnl.c \
+			$(SRCDIR)/string/ft_strchr.c \
+			$(SRCDIR)/string/ft_strdup.c \
+			$(SRCDIR)/string/ft_striteri.c \
+			$(SRCDIR)/string/ft_strjoin_gnl.c \
+			$(SRCDIR)/string/ft_strjoin.c \
+			$(SRCDIR)/string/ft_strlcat.c \
+			$(SRCDIR)/string/ft_strlcpy.c \
+			$(SRCDIR)/string/ft_strlen_gnl.c \
+			$(SRCDIR)/string/ft_strlen.c \
+			$(SRCDIR)/string/ft_strmapi.c \
+			$(SRCDIR)/string/ft_strncmp.c \
+			$(SRCDIR)/string/ft_strnstr.c \
+			$(SRCDIR)/string/ft_strrchr.c \
+			$(SRCDIR)/string/ft_strtrim.c \
+			$(SRCDIR)/string/ft_substr_gnl.c \
+			$(SRCDIR)/string/ft_substr.c
 
-CC = cc
-CFLAGS = -Wall -Werror -Wextra -I$(INC_DIR)
+# Object files
+OBJS	=	$(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 
+# Name
+NAME	=	libft.a
+
+# Colors for output
+GREEN	=	\033[0;32m
+RED		=	\033[0;31m
+GRAY	=	\033[0;90m
+
+# Default target
 all: $(NAME)
 
+# Build the library
 $(NAME): $(OBJS)
-	ar rcs $@ $^
+	@echo "$(GREEN)Libft has been created."
+	@ar rcs $@ $^
 
+# Compile object files
+$(OBJDIR)/%.o: $(SRCDIR)/%.c
+	@mkdir -p $(dir $@)
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@echo "$(GRAY)Compiled: $<"
+
+# Clean object files
 clean:
-	rm -f $(OBJS)
+	@echo "$(RED)Objects has been removed."
+	@rm -rf $(OBJDIR)
 
+# Fully clean everything
 fclean: clean
-	rm -f $(NAME)
+	@echo "$(RED)Libft has been removed."
+	@rm -f $(NAME)
 
+# Rebuild everything
 re: fclean all
+
+.PHONY: all clean fclean re
