@@ -6,7 +6,7 @@
 #    By: mahkilic <mahkilic@student.42.fr>            +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/10/08 19:45:43 by mahkilic      #+#    #+#                  #
-#    Updated: 2025/01/26 13:30:00 by mahkilic      ########   odam.nl          #
+#    Updated: 2025/01/26 07:50:49 by mahkilic      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,9 +79,9 @@ OBJS	=	$(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 NAME	=	libft.a
 
 # Colors for output
-GREEN	=	\033[0;32m
-RED		=	\033[0;31m
-GRAY	=	\033[0;90m
+GREEN		=	\033[0;32m
+ORANGE	=	\033[38;5;214m
+GRAY		=	\033[0;90m
 
 # Default target
 all: $(NAME)
@@ -99,12 +99,12 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 
 # Clean object files
 clean:
-	@echo "$(RED)Objects has been removed."
+	@echo "$(ORANGE)Objects has been removed."
 	@rm -rf $(OBJDIR)
 
 # Fully clean everything
 fclean: clean
-	@echo "$(RED)Libft has been removed."
+	@echo "$(ORANGE)Libft has been removed."
 	@rm -f $(NAME)
 
 # Rebuild everything
