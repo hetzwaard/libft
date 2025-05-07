@@ -6,11 +6,21 @@
 /*   By: mahkilic <mahkilic@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/18 14:52:20 by mahkilic      #+#    #+#                 */
-/*   Updated: 2025/01/16 20:44:05 by mahkilic      ########   odam.nl         */
+/*   Updated: 2025/05/07 04:30:04 by mahkilic      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
+
+int	ft_strcmp(const char *s1, const char *s2)
+{
+	while (*s1 == *s2 && *s1 && *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
+}
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
