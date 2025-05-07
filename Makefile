@@ -6,7 +6,7 @@
 #    By: mahkilic <mahkilic@student.42.fr>            +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/10/08 19:45:43 by mahkilic      #+#    #+#                  #
-#    Updated: 2025/04/09 19:31:02 by mahkilic      ########   odam.nl          #
+#    Updated: 2025/05/07 06:17:32 by mahkilic      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,6 +65,7 @@ SRCS	=	$(SRCDIR)/alg/ft_free_arr.c \
 			$(SRCDIR)/string/ft_strlen_gnl.c \
 			$(SRCDIR)/string/ft_strlen.c \
 			$(SRCDIR)/string/ft_strmapi.c \
+			$(SRCDIR)/string/ft_strcmp.c \
 			$(SRCDIR)/string/ft_strncmp.c \
 			$(SRCDIR)/string/ft_strnstr.c \
 			$(SRCDIR)/string/ft_strrchr.c \
