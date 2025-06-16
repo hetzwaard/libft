@@ -56,6 +56,7 @@ SRCS	=	$(SRCDIR)/alg/ft_free_arr.c \
 			$(SRCDIR)/stdlib/ft_split.c \
 			$(SRCDIR)/string/ft_strchr_gnl.c \
 			$(SRCDIR)/string/ft_strchr.c \
+			$(SRCDIR)/string/ft_strcpy.c \
 			$(SRCDIR)/string/ft_strdup.c \
 			$(SRCDIR)/string/ft_striteri.c \
 			$(SRCDIR)/string/ft_strjoin_gnl.c \

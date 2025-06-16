@@ -76,6 +76,7 @@ char		**ft_split(char const *s, char c);
 // STRING
 char		*ft_strchr_gnl(char *s, int c);
 char		*ft_strchr(const char *s, int c);
+char		*ft_strcpy(char *dst, char *src);
 char		*ft_strdup(const char *s);
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_strjoin_gnl(char *s1, char *s2);
