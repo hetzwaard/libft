@@ -76,6 +76,7 @@ void		*ft_calloc(size_t nmemb, size_t size);
 char		*ft_itoa(int n);
 char		**ft_split_ps(char *s, char c);
 char		**ft_split(char const *s, char c);
+long		ft_strtol(const char *nptr, char **endptr, int base);
 
 // STRING
 char		*ft_strchr_gnl(char *s, int c);
