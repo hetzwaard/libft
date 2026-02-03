@@ -20,7 +20,10 @@ OBJDIR	=	objects
 INCDIR	=	include
 
 # Source files
-SRCS	=	$(SRCDIR)/alg/ft_free_arr.c \
+SRCS	=	$(SRCDIR)/alg/ft_free.c \
+			$(SRCDIR)/alg/ft_free_arr.c \
+			$(SRCDIR)/alg/ft_free_matrix.c \
+			$(SRCDIR)/alg/ft_get_split_size.c \
 			$(SRCDIR)/alg/ft_swap_long.c \
 			$(SRCDIR)/ctype/ft_isalnum.c \
 			$(SRCDIR)/ctype/ft_isalpha.c \
@@ -31,6 +34,12 @@ SRCS	=	$(SRCDIR)/alg/ft_free_arr.c \
 			$(SRCDIR)/ctype/ft_tolower.c \
 			$(SRCDIR)/ctype/ft_toupper.c \
 			$(SRCDIR)/gnl/get_next_line.c \
+			$(SRCDIR)/list/ft_lstnew.c \
+			$(SRCDIR)/list/ft_lstadd_back.c \
+			$(SRCDIR)/list/ft_lstlast.c \
+			$(SRCDIR)/list/ft_lstsize.c \
+			$(SRCDIR)/list/ft_lstdelone.c \
+			$(SRCDIR)/list/ft_lstclear.c \
 			$(SRCDIR)/mem/ft_memchr.c \
 			$(SRCDIR)/mem/ft_memcmp.c \
 			$(SRCDIR)/mem/ft_memcpy.c \
@@ -59,6 +68,7 @@ SRCS	=	$(SRCDIR)/alg/ft_free_arr.c \
 			$(SRCDIR)/string/ft_strchr.c \
 			$(SRCDIR)/string/ft_strcpy.c \
 			$(SRCDIR)/string/ft_strdup.c \
+			$(SRCDIR)/string/ft_is_emty_str.c \
 			$(SRCDIR)/string/ft_striteri.c \
 			$(SRCDIR)/string/ft_strjoin_gnl.c \
 			$(SRCDIR)/string/ft_strjoin.c \

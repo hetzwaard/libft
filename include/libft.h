@@ -28,8 +28,25 @@
 
 # define WHITESPACES " \t\n\r\v\f"
 
+// LIST
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
+t_list		*ft_lstnew(void *content);
+void		ft_lstadd_back(t_list **lst, t_list *new);
+t_list		*ft_lstlast(t_list *lst);
+int			ft_lstsize(t_list *lst);
+void		ft_lstdelone(t_list *lst, void (*del)(void *));
+void		ft_lstclear(t_list **lst, void (*del)(void *));
+
 // ALG
+void		ft_free(void *ptr);
 void		ft_free_arr(char **res);
+void		ft_free_matrix(char **res);
+int			ft_get_split_size(char **split);
 void		ft_swap_long(long *a, long *b);
 
 // CTYPE
@@ -83,6 +100,7 @@ char		*ft_strchr_gnl(char *s, int c);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strcpy(char *dst, char *src);
 char		*ft_strdup(const char *s);
+bool		ft_is_emty_str(char *str);
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_strjoin_gnl(char *s1, char *s2);
 char		*ft_strjoin(char const *s1, char const *s2);
